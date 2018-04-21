@@ -19,6 +19,7 @@ func main() {
 	appendResult := kingpin.Flag("append", "Append output result").Short('a').Bool()
 
 	var output string
+	kingpin.CommandLine.HelpFlag.Short('h')
 	kingpin.Parse()
 
 	dumOutput := *outputFile == ""
